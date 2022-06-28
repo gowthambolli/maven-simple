@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "66a00aba-b101-4959-96d9-a68111b650ae",
+		"name": "6.0 user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "6.0 User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "gowthambolli",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "welcome1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Postman1\",\r\n    \"password\": \"Welcome@1\",\r\n    \"email\": \"krishnagowtham.bolli@flexagon.com\",\r\n    \"lastName\": \"Postman\",\r\n    \"firstName\": \"User\",\r\n    \"userGroups\":\r\n    [\r\n        {\r\n            \"groupId\": 10942\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://fdtlt86.flexagon.azure.com:8000/flexdeploy/rest/v2/administration/security/user/6681485",
+					"protocol": "http",
+					"host": [
+						"fdtlt86",
+						"flexagon",
+						"azure",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"flexdeploy",
+						"rest",
+						"v2",
+						"administration",
+						"security",
+						"user",
+						"6681485"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
